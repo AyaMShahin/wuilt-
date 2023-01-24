@@ -1,0 +1,395 @@
+/* Common Styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 18px;
+  font-weight: 500;
+  transform-style: preserve-3d;
+  height: 100%;
+  /* direction: rtl; */
+}
+html {
+  height: 100%;
+}
+/* wrapper around all content */
+main {
+  min-height: 100%;
+}
+
+main::after {
+  content: "";
+  display: block;
+  height: 70px; /*height + padding */
+}
+
+/* Importing custom fonts */
+@font-face {
+  font-family: "Somarsans Bold";
+  src: url(/fonts/somarsans/TTF/Standard/SomarSans-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Somarsans Regular";
+  src: url(/fonts/somarsans/TTF/Standard/Somarsans-Regular.ttf)
+    format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Somarsans Medium";
+  src: url(/fonts/somarsans/TTF/Standard/SomarSans-Medium.ttf)
+    format("truetype");
+  font-weight: normal;
+}
+.web-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bg-header {
+  padding: 15px 0;
+  background-color: rgba(240, 253, 250, 0.6);
+}
+.bg-light {
+  background-color: rgba(240, 253, 250, 0.6) !important;
+}
+.bg-heading {
+  -webkit-background-clip: text;
+  background-image: linear-gradient(123deg, #1e293b 24%, #0d9488 65%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.f-title {
+  font-size: 1.5rem;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.p-style {
+  margin-bottom: 31px;
+  color: #667085;
+  font-weight: normal;
+  font-weight: 500;
+}
+.btn {
+  border-color: #0f766e;
+  background-color: #0d9488;
+  padding: 10px 24px;
+  margin: 0 30px;
+  border-radius: 1e6px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #0f766e;
+  color: #fff;
+  transform: translate(0, 4px); /* animation: slide-footer 1s ease; */
+  transition: ease-in 0.3s;
+}
+.up-down {
+  animation: up-down linear 4s;
+  animation-iteration-count: infinite;
+}
+.down-up {
+  animation: down-up linear 4s;
+  animation-iteration-count: infinite;
+}
+.arrow::after {
+  font-family: "Font Awesome 5 free"; /* change like this */
+  font-weight: 900; /* insert this definition */
+  font-size: 18px;
+  content: "\f061";
+  display: inline-block;
+  color: #fff;
+  animation: arrow-right 0.6s infinite alternate ease-in-out;
+  /* transition: 0.5s ease; */
+}
+.note {
+  margin-top: 14px;
+  color: #334d74;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+}
+nav a {
+  color: #1e293b !important;
+  margin-right: 22px;
+  transition: 1s;
+}
+nav a:hover {
+  color: #0d9488 !important;
+}
+
+header {
+  font-family: "Somarsans Medium", sans-serif;
+  font-size: 16px;
+}
+nav form .login {
+  border-radius: 1e6px;
+  padding: 10px 24px;
+}
+
+nav form .login:hover {
+  background-color: #0f766e;
+  color: #fff !important;
+  transform: translate(0, 4px); /* animation: slide-footer 1s ease; */
+  transition: ease-in 0.3s;
+}
+/* Nav end */
+/* Get started section */
+.get-started {
+  min-height: 883px;
+  background-color: rgba(240, 253, 250, 0.6);
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 106px;
+  /* perspective: 1000px; */
+}
+/* Content up */
+.get-started .content-up h1 {
+  max-width: 620px;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 22px;
+}
+.get-started .content-up p {
+  font-weight: normal;
+  font-size: 18px;
+}
+.get-started .content-up .btn {
+  padding: 14px 36px;
+  margin-bottom: 15px;
+}
+/*.get-started .btn .btn-style .arrow::after {
+  font-family: "Font Awesome 5 free"; /* change like this 
+  font-weight: 900; /* insert this definition 
+  font-size: 18px;
+  content: "\f061";
+  display: inline-block;
+  color: #fff;
+  animation: arrow-right 0.6s infinite alternate ease-in-out;
+  /* transition: 0.5s ease; 
+}*/
+@keyframes arrow-right {
+  0% {
+    transform: translateX(0);
+    /* opacity: 0.4; */
+  }
+  100% {
+    transform: translateX(-10px);
+    /* opacity: 1; */
+  }
+}
+/* .get-started .content-up .note {
+  margin-top: 14px;
+  color: #334d74;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+} */
+/*End of Content up  */
+/* content down */
+.get-started .content-down {
+  /* height: 100vh; */
+  padding-top: 50px;
+  /* overflow: hidden; */
+  margin: 10px 0;
+}
+.get-started .content-down .wrapper {
+  /* width: 100vw; */
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow: scroll; */
+}
+.get-started .content-down .full1 {
+  top: -94px;
+  left: -70px;
+  z-index: 1;
+}
+.get-started .content-down .full2 {
+  top: -57px;
+  right: -16px;
+  z-index: 1;
+}
+.get-started .content-down .full3 {
+  top: 0;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 0 8px 34px 0 rgb(40 40 43 / 14%);
+  /* animation: down-up linear 4s;
+  animation-iteration-count: infinite; */
+}
+.get-started .content-down .full4 {
+  right: 0px;
+  top: 250px;
+  z-index: 3;
+  border-radius: 10px;
+  box-shadow: 0 8px 34px 0 rgb(40 40 43 / 6%);
+  /* animation: up-down linear 4s;
+  animation-iteration-count: infinite; */
+}
+.get-started .content-down .full5 {
+  left: 0;
+  top: 100px;
+  z-index: 3;
+  border-radius: 16px;
+  /* animation: up-down linear 4s;
+  animation-iteration-count: infinite; */
+}
+.get-started .content-down .full6 {
+  right: -40px;
+  top: 245px;
+  z-index: 1;
+}
+@keyframes up-down {
+  0% {
+    transform: translate(1px, 20px);
+  }
+  24% {
+    transform: translate(1px, 30px);
+  }
+  50% {
+    transform: translate(1px, 12px);
+  }
+  74% {
+    transform: translate(1px, 22px);
+  }
+  100% {
+    transform: translate(1px, 22px);
+  }
+}
+@keyframes down-up {
+  0% {
+    transform: translateY(0);
+  }
+  24% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* End of content down */
+/* Get started end */
+
+/* Description section */
+.description {
+  /* height: 60vh; */
+  margin-top: 300px;
+  padding-top: 110px;
+}
+.description .right-content {
+  margin-right: 12px;
+}
+.description .right-content .bg-heading {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.description .right-content .p-style {
+  font-size: 20px;
+  line-height: 32px;
+}
+.description .left-content .number {
+  font-size: 80px;
+  color: #1e293b;
+  font-weight: 700;
+  line-height: 80px;
+}
+.description .left-content .number span {
+  font-size: 40px;
+}
+
+.description .left-content .col p span {
+  color: #1e293b;
+  font-weight: 700;
+}
+/* End description section */
+
+/* Create website */
+.create-website {
+  padding-top: 100px;
+}
+.create-website .content .down {
+  position: relative;
+  min-height: 580px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #f0fdfa;
+  border-radius: 16px;
+  /* justify-content: center; */
+  align-items: center;
+}
+.create-website .down .web-img {
+  height: 570px;
+  margin-right: 50px;
+  z-index: 1;
+  width: 100%;
+  max-width: 617px;
+  top: 85px;
+  left: 29px;
+}
+.create-website .down .web-img .instant1 {
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+}
+.create-website .down .web-img .instant2 {
+  top: 50px;
+  left: 0;
+  border-radius: 16px;
+}
+.create-website .down .web-img .instant3 {
+  left: 287px;
+  bottom: 249px;
+  border-radius: 16px;
+}
+/* items left end */
+
+/* items right */
+.create-website .down .right {
+  font-family: "Somarsans Medium", sans-serif;
+  /* text-align: start; */
+  margin-left: 50px;
+}
+.create-website .down .right h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+.create-website .down .right .btn {
+  margin: 0;
+  padding: 14px 27px;
+  font-weight: 500;
+}
+.create-website .down .right .p-style {
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* Create website end */
+
+/* Features Section */
+.feature {
+  font-family: "Somarsans Medium", sans-serif;
+}
+.feature .feature-up .item {
+  width: 23%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* feature-down */
