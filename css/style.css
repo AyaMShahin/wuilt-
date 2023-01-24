@@ -393,3 +393,148 @@ nav form .login:hover {
   margin-right: auto;
 }
 /* feature-down */
+/* .feature-down {
+  width: 4000%;
+  overflow: hidden;
+}
+.feature-down .down .wrapper {
+  height: 100%;
+  padding: 30px;
+  height: 100%;
+  border-radius: 14px;
+} */
+/* 
+.feature-down .carousel .car::before {
+  content: "<";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 35px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 0px 50px 60px var(--black);
+  background: var(--black);
+}
+
+.feature-down .carousel .car::after {
+  content: ">";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 35px;
+  right: 0;
+  top: 0;
+
+  box-shadow: 0px 0px 50px 60px var(--black);
+  background: var(--black);
+}
+.feature-down .carousel .car .left {
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 50px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.feature-down .carousel .car .right {
+  position: absolute;
+  right: 0;
+  width: 35px;
+  height: 50px;
+  z-index: 2;
+  cursor: pointer;
+} */
+/* 
+.feature-down .carousel .car {
+  max-width: 850px;
+  padding: 30px;
+  background-color: #f0fdfa;
+
+  margin-right: 30px;
+  background-color: #f0fdfa;
+}
+.feature-down .carousel .car img {
+  border-radius: 10px;
+}
+.feature-down .carousel .car .quote {
+  max-width: 380px;
+  color: #1e293b;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-left: 40px;
+} */
+/* online business */
+.on-business {
+  padding-top: 100px;
+}
+.on-business .content .down {
+  position: relative;
+  min-height: 580px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #f0fdfa;
+  border-radius: 16px;
+  /* justify-content: center; */
+  align-items: center;
+}
+.on-business .down .web-img {
+  height: 570px;
+  margin-right: 50px;
+  z-index: 1;
+  width: 100%;
+  max-width: 617px;
+  top: 85px;
+  left: 29px;
+}
+.on-business .ecommerce1,
+.on-business .ecommerce2,
+.on-business .ecommerce3 {
+  box-shadow: 0 5px 23px 0 rgb(40 40 43 / 6%);
+}
+.on-business .down .web-img .ecommerce1 {
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  /* box-shadow: 0 5px 23px 0 rgb(40 40 43 / 6%); */
+}
+.on-business .down .web-img .ecommerce2 {
+  top: -140px;
+  left: 0;
+  border-radius: 16px;
+  /* box-shadow: 0 5px 23px 0 rgb(40 40 43 / 6%); */
+}
+.on-business .down .web-img .ecommerce3 {
+  left: 287px;
+  bottom: 249px;
+  border-radius: 16px;
+  /* box-shadow: 0 5px 23px 0 rgb(40 40 43 / 6%); */
+}
+/* items left end */
+/* items right */
+.on-business .down .right {
+  font-family: "Somarsans Medium", sans-serif;
+  /* text-align: start; */
+  margin-left: 50px;
+}
+.on-business .down .right h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+.on-business .down .right .btn {
+  margin: 0;
+  padding: 14px 27px;
+  font-weight: 500;
+}
+.on-business .down .right .p-style {
+  font-size: 16px;
+  margin-top: 10px;
+}
