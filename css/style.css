@@ -62,9 +62,10 @@ main::after {
   background-image: linear-gradient(123deg, #1e293b 24%, #0d9488 65%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 3.5rem;
   margin-bottom: 20px;
+  letter-spacing: -1.8px;
 }
 .f-title {
   font-size: 1.5rem;
@@ -128,6 +129,7 @@ main::after {
   letter-spacing: -0.2px;
   font-weight: 500;
 }
+/* Common styles end */
 nav a {
   color: #1e293b !important;
   margin-right: 22px;
@@ -168,7 +170,7 @@ nav form .login:hover {
   max-width: 620px;
   text-align: center;
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 900;
   margin: auto;
   margin-bottom: 22px;
 }
@@ -181,16 +183,7 @@ nav form .login:hover {
   margin-bottom: 15px;
   /* line-height: 1em; */
 }
-/*.get-started .btn .btn-style .arrow::after {
-  font-family: "Font Awesome 5 free"; /* change like this 
-  font-weight: 900; /* insert this definition 
-  font-size: 18px;
-  content: "\f061";
-  display: inline-block;
-  color: #fff;
-  animation: arrow-right 0.6s infinite alternate ease-in-out;
-  /* transition: 0.5s ease; 
-}*/
+
 @keyframes arrow-right {
   0% {
     transform: translateX(0);
@@ -201,15 +194,7 @@ nav form .login:hover {
     /* opacity: 1; */
   }
 }
-/* .get-started .content-up .note {
-  margin-top: 14px;
-  color: #334d74;
-  font-size: 14px;
-  letter-spacing: -0.2px;
-  font-weight: 500;
-} */
-/*End of Content up  */
-/* content down */
+
 .get-started .content-down {
   /* height: 100vh; */
   padding-top: 50px;
@@ -238,8 +223,6 @@ nav form .login:hover {
   z-index: 2;
   border-radius: 10px;
   box-shadow: 0 8px 34px 0 rgb(40 40 43 / 14%);
-  /* animation: down-up linear 4s;
-  animation-iteration-count: infinite; */
 }
 .get-started .content-down .full4 {
   right: 0px;
@@ -247,22 +230,19 @@ nav form .login:hover {
   z-index: 3;
   border-radius: 10px;
   box-shadow: 0 8px 34px 0 rgb(40 40 43 / 6%);
-  /* animation: up-down linear 4s;
-  animation-iteration-count: infinite; */
 }
 .get-started .content-down .full5 {
   left: 0;
   top: 100px;
   z-index: 3;
   border-radius: 16px;
-  /* animation: up-down linear 4s;
-  animation-iteration-count: infinite; */
 }
 .get-started .content-down .full6 {
   right: -40px;
   top: 245px;
   z-index: 1;
 }
+
 @keyframes up-down {
   0% {
     transform: translate(1px, 20px);
@@ -295,6 +275,173 @@ nav form .login:hover {
   }
 }
 /* End of content down */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px), only screen and (min-width: 600px) {
+  .get-started {
+    padding-top: 50px;
+  }
+  .bg-heading {
+    font-size: 36px;
+  }
+
+  .get-started .content-up h1 {
+    font-size: 36px;
+  }
+  .get-started .content-up p {
+    margin-bottom: 26px;
+    font-weight: 500;
+  }
+  .get-started .content-up .note {
+    margin-bottom: 26px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .get-started .content-down .full1 {
+    top: -87px;
+    left: -68px;
+    width: 148px;
+    height: 148px;
+  }
+  .get-started .content-down .full2 {
+    width: 70px;
+    height: 70px;
+    top: -31px;
+    right: -25px;
+  }
+  .get-started .content-down .full3 {
+    width: 348px;
+    height: 289px;
+  }
+  .get-started .content-down .full4 {
+    width: 87px;
+    height: 120px;
+    top: 64px;
+  }
+  .get-started .content-down .full5 {
+    width: 100px;
+    height: 152px;
+    top: 45px;
+  }
+  .get-started .content-down .full6 {
+    width: 157px;
+    height: 160px;
+    top: 135px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .get-started .content-down .full1 {
+    top: -97px;
+    left: -95px;
+    width: 219px;
+    height: 219px;
+  }
+  .get-started .content-down .full2 {
+    width: 103px;
+    height: 103px;
+    top: -33px;
+    right: -46px;
+  }
+  .get-started .content-down .full3 {
+    width: 515px;
+    height: 427px;
+  }
+  .get-started .content-down .full4 {
+    width: 129px;
+    height: 178px;
+    top: 102px;
+  }
+  .get-started .content-down .full5 {
+    width: 148px;
+    height: 225px;
+    left: -35px;
+  }
+  .get-started .content-down .full6 {
+    width: 232px;
+    height: 236px;
+    top: 195px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px), only screen and (min-width: 992px) {
+  .get-started .content-up h1 {
+    font-size: 47px;
+    max-width: 521px;
+  }
+  .get-started .content-down .full1 {
+    top: -130px;
+    left: -140px;
+    width: 300px;
+    height: 300px;
+  }
+  .get-started .content-down .full2 {
+    width: 141px;
+    height: 141px;
+    top: -65px;
+    right: -74px;
+  }
+  .get-started .content-down .full3 {
+    width: 713px;
+    height: 586px;
+  }
+  .get-started .content-down .full4 {
+    width: 177px;
+    height: 244px;
+    top: 218px;
+  }
+  .get-started .content-down .full5 {
+    width: 203px;
+    height: 309px;
+  }
+  .get-started .content-down .full6 {
+    width: 318px;
+    height: 325px;
+    top: 221px;
+    right: -67px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .get-started .content-up h1 {
+    font-size: 3.5em;
+    max-width: 674px;
+    line-height: 1.1em;
+  }
+  .get-started .content-down .full1 {
+    width: 320px;
+    height: 320px;
+  }
+  .get-started .content-down .full2 {
+    width: 320px;
+    height: 320px;
+  }
+  .get-started .content-down .full3 {
+    width: 845px;
+    height: 701px;
+  }
+  .get-started .content-down .full4 {
+    width: 284px;
+    height: 392px;
+  }
+  .get-started .content-down .full5 {
+    width: 312px;
+    height: 475px;
+  }
+  .get-started .content-down .full6 {
+    width: 377px;
+    height: 344px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */
+
 /* Get started end */
 
 /* Description section */
@@ -499,7 +646,7 @@ nav form .login:hover {
 }
 .on-business .down .web-img {
   height: 570px;
-  margin-right: 50px;
+  margin-right: 32px;
   z-index: 1;
   width: 100%;
   max-width: 617px;
@@ -680,12 +827,22 @@ nav form .login:hover {
   color: #000;
   animation: 0;
 }
+#accordion .card-body {
+  font-weight: 600;
+}
+.freq-questions .freq-right #accordion #headingFive {
+  border: 0;
+}
+#accordion #collapseFour .card-body a {
+  color: #0f766e;
+  text-decoration: underline;
+}
 /* frequently questions end */
 
 /* cta section */
 .cta {
   font-family: "Somarsans Medium", sans-serif;
-  padding-top: 50px;
+  padding-top: 140px;
   text-align: center;
   background-color: #0f172a;
   background-image: linear-gradient(
@@ -748,6 +905,9 @@ footer .foot-content .right .links .circle {
 footer .foot-content .right .links .circle:hover {
   background-color: #0f766e;
 }
+footer .foot-content .right .foot-icons {
+  margin-bottom: 50px;
+}
 footer .foot-content .list,
 .foot-content .info {
   color: #fff;
@@ -796,7 +956,7 @@ footer .foot-content .list ul {
   line-height: 1.714em;
 }
 footer .foot-last {
-  padding: 30px 0;
+  padding: 5px 0px;
 }
 footer .foot-last p {
   margin: 30px 0;
