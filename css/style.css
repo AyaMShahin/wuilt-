@@ -85,7 +85,7 @@ main::after {
   padding: 10px 24px;
   margin: 0 30px;
   border-radius: 1e6px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #fff;
 }
@@ -95,7 +95,7 @@ main::after {
   transform: translate(0, 4px); /* animation: slide-footer 1s ease; */
   transition: ease-in 0.3s;
 }
-btn1 {
+.btn1 {
   background-color: #fff;
   color: #0f766e;
 }
@@ -140,6 +140,7 @@ nav a:hover {
 header {
   font-family: "Somarsans Medium", sans-serif;
   font-size: 16px;
+  font-weight: 700;
 }
 nav form .login {
   border-radius: 1e6px;
@@ -178,6 +179,7 @@ nav form .login:hover {
 .get-started .content-up .btn {
   padding: 14px 36px;
   margin-bottom: 15px;
+  /* line-height: 1em; */
 }
 /*.get-started .btn .btn-style .arrow::after {
   font-family: "Font Awesome 5 free"; /* change like this 
@@ -802,3 +804,4 @@ footer .foot-last p {
   font-size: 17px;
   line-height: 1.765em;
 }
+/* footer end */
