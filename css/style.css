@@ -666,8 +666,10 @@ nav .lang .dropdown:hover .lang {
     left: -24px;
   }
   .create-website .down .web-img .instant3 {
-    width: 182px;
-    height: 30px;
+    /* width: 182px;
+    height: 30px; */
+    width: 100%;
+    height: auto;
     right: 57px;
     bottom: 200px;
   }
@@ -978,10 +980,10 @@ nav .lang .dropdown:hover .lang {
     top: -45px;
   }
   .on-business .down .web-img .ecommerce3 {
-    width: 182px;
-    height: 31px;
-    /* width: 100%;
-    height: auto; */
+    /* width: 182px;
+    height: 31px; */
+    width: 50%;
+    height: auto;
     right: 57px;
     bottom: 261px;
   }
