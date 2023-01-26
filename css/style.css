@@ -10,7 +10,7 @@ body {
   font-weight: 500;
   transform-style: preserve-3d;
   height: 100%;
-  /* direction: rtl; */
+  overflow-x: hidden;
 }
 html {
   height: 100%;
@@ -281,7 +281,7 @@ nav .lang .dropdown:hover .lang {
   border-radius: 16px;
 }
 .get-started .content-down .full6 {
-  right: -40px;
+  right: -21px;
   top: 245px;
   z-index: 1;
 }
@@ -532,9 +532,21 @@ nav .lang .dropdown:hover .lang {
     margin-top: 0;
     padding-top: 0;
   }
+  .description .desc-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .description .right-content {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
   .description .right-content .bg-heading {
     font-size: 36px;
     font-weight: 800;
+  }
+  .description .left-content .csr img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1157,7 +1169,6 @@ nav .lang .dropdown:hover .lang {
   padding: 40px;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
-
   transition: 0.3s;
 }
 .features .col1 {
@@ -1178,6 +1189,8 @@ nav .lang .dropdown:hover .lang {
 @media only screen and (max-width: 600px), only screen and (min-width: 600px) {
   .web-container {
     width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .features .features-card .img {
     max-width: 100%;
@@ -1190,8 +1203,13 @@ nav .lang .dropdown:hover .lang {
     align-content: center;
     justify-content: center;
   }
-  .features .features-card {
+  .features .features-down {
+    margin-top: 0;
+  }
+  .features .features-up .features-card,
+  .features .features-down .features-card {
     margin-bottom: 40px;
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1205,10 +1223,39 @@ nav .lang .dropdown:hover .lang {
     align-content: center;
     justify-content: center;
   }
+
+  .features .features-up .features-card,
+  .features .features-down .features-card {
+    /* margin-bottom: 40px; */
+    margin-left: 0;
+    margin-right: 16px;
+  }
+  .features .features-up .col2,
+  .features .features-down .col2 {
+    /* margin-bottom: 40px; */
+    margin-left: 16px;
+    margin-right: 0;
+  }
 }
 @media only screen and (min-width: 992px) {
   .web-container {
     width: 80%;
+  }
+  .features .features-down {
+    margin-top: 50px;
+  }
+
+  .features .features-up .features-card,
+  .features .features-down .features-card {
+    /* margin-bottom: 40px; */
+    margin-left: 0;
+    margin-right: 16px;
+  }
+  .features .features-up .col2,
+  .features .features-down .col2 {
+    /* margin-bottom: 40px; */
+    margin-left: 16px;
+    margin-right: 0;
   }
 }
 
@@ -1233,9 +1280,6 @@ nav .lang .dropdown:hover .lang {
 .freq-questions .freq-left .p-style {
   font-weight: 600;
 }
-/* .freq-questions .freq-left .col-4 {
-  flex: 0 0 23.333333% !important;
-} */
 .freq-questions .freq-left .btn {
   margin: 0;
 }
@@ -1305,6 +1349,32 @@ nav .lang .dropdown:hover .lang {
   color: #0f766e;
   text-decoration: underline;
 }
+@media only screen and (max-width: 600px), only screen and (min-width: 600px) {
+  .freq-questions .freq-content {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+  .freq-questions .freq-left {
+    margin-bottom: 50px;
+  }
+  .freq-questions .freq-left .f-title {
+    font-size: 32px;
+  }
+  .freq-questions .freq-left .p-style {
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .freq-questions .freq-left .f-title {
+    font-size: 3em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .freq-questions .freq-content {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+}
 /* frequently questions end */
 
 /* cta section */
@@ -1341,6 +1411,12 @@ nav .lang .dropdown:hover .lang {
   margin-bottom: 40px;
   line-height: 1em;
   font-weight: 600;
+}
+@media only screen and (max-width: 600px), only screen and (min-width: 600px) {
+  .cta .content img {
+    width: 100%;
+    height: auto;
+  }
 }
 /* End of CTA section */
 /* Footer */
@@ -1431,5 +1507,19 @@ footer .foot-last p {
   color: #f3f5f8;
   font-size: 17px;
   line-height: 1.765em;
+}
+@media only screen and (max-width: 600px), only screen and (min-width: 600px) {
+  footer .foot-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer .foot-content .list,
+  .foot-content .info {
+    margin-left: 0px;
+  }
+  .foot-content .info .email {
+    width: 13rem;
+    margin-bottom: 50px;
+  }
 }
 /* footer end */
