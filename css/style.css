@@ -668,7 +668,7 @@ nav .lang .dropdown:hover .lang {
   .create-website .down .web-img .instant3 {
     width: 182px;
     height: 30px;
-    left: 202px;
+    left: 180px;
     bottom: 200px;
   }
   .create-website .down .right h2 {
@@ -982,8 +982,8 @@ nav .lang .dropdown:hover .lang {
     height: 31px;
     /* width: 100%;
     height: auto; */
-    left: 175px;
-    bottom: 344px;
+    left: 158px;
+    bottom: 261px;
   }
 }
 @media only screen and (max-width: 600px), only screen and (min-width: 600px) {
