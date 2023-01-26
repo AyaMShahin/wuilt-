@@ -671,7 +671,7 @@ nav .lang .dropdown:hover .lang {
     width: 50%;
     height: auto;
     left: 132px;
-    bottom: 200px;
+    bottom: 219px;
   }
   .create-website .down .right h2 {
     font-size: 32px;
@@ -1520,6 +1520,9 @@ footer .foot-last p {
   footer .foot-content .list,
   .foot-content .info {
     margin-left: 0px;
+  }
+  footer .foot-content .list ul {
+    margin-right: 33px;
   }
   .foot-content .info .email {
     width: 13rem;
