@@ -1523,6 +1523,9 @@ footer .foot-last p {
   line-height: 1.765em;
 }
 @media only screen and (max-width: 600px), only screen and (min-width: 600px) {
+  footer .web-container {
+    width: 100%;
+  }
   footer .foot-content {
     flex-direction: column;
     flex-wrap: wrap;
