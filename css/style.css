@@ -670,7 +670,7 @@ nav .lang .dropdown:hover .lang {
     height: 30px; */
     width: 50%;
     height: auto;
-    right: 57px;
+    left: 132px;
     bottom: 200px;
   }
   .create-website .down .right h2 {
@@ -984,7 +984,7 @@ nav .lang .dropdown:hover .lang {
     height: 31px; */
     width: 50%;
     height: auto;
-    right: 57px;
+    right: 40px;
     bottom: 261px;
   }
 }
