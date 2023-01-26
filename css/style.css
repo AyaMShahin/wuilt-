@@ -949,19 +949,25 @@ nav .lang .dropdown:hover .lang {
 }
 @media only screen and (max-width: 600px) {
   .on-business .down .web-img .ecommerce1 {
-    width: 416px;
-    height: 282px;
+    width: 100%;
+    height: auto;
+    /* width: 416px;
+    height: 282px; */
     top: -10px;
     left: -19px;
   }
   .on-business .down .web-img .ecommerce2 {
     width: 128px;
     height: 353px;
+    /* width: 100%;
+    height: auto; */
     top: -45px;
   }
   .on-business .down .web-img .ecommerce3 {
     width: 182px;
     height: 31px;
+    /* width: 100%;
+    height: auto; */
     left: 175px;
     bottom: 344px;
   }
@@ -1083,6 +1089,13 @@ nav .lang .dropdown:hover .lang {
   background-color: #0f766e;
   color: #fff;
 }
+@media only screen and (max-width: 600px) {
+  .more-feature .feature-down .btn,
+  .more-feature .feature-down .btn1 {
+    padding: 8px;
+  }
+}
+
 @media only screen and (max-width: 600px),
   only screen and (min-width: 600px),
   only screen and (min-width: 768px) {
@@ -1161,6 +1174,44 @@ nav .lang .dropdown:hover .lang {
 .features .features-card:hover {
   box-shadow: 0 40px 80px 0 hsl(0deg 0% 90% / 50%);
 }
+
+@media only screen and (max-width: 600px), only screen and (min-width: 600px) {
+  .web-container {
+    width: 90%;
+  }
+  .features .features-card .img {
+    max-width: 100%;
+    height: auto;
+  }
+  .features .features-up,
+  .features .features-down {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .features .features-card {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .web-container {
+    width: 90%;
+  }
+  .features .features-up,
+  .features .features-down {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .web-container {
+    width: 80%;
+  }
+}
+
 /* End of features section */
 
 /* Frequently questions section */
