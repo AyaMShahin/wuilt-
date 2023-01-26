@@ -1542,6 +1542,14 @@ footer .foot-last p {
     margin-bottom: 50px;
   }
 }
+@media only screen and (min-width: 600px) {
+  footer .web-container {
+    width: 90%;
+  }
+  footer .foot-content .list ul {
+    margin-right: 65px;
+  }
+}
 @media only screen and (min-width: 992px) {
   footer .foot-content {
     flex-direction: row;
