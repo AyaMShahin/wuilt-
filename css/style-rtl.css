@@ -1,6 +1,6 @@
 body {
   text-align: start;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .get-started .content-up h1 {
   line-height: 1.6em;
