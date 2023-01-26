@@ -1,0 +1,85 @@
+body {
+  text-align: start;
+}
+.get-started .content-up h1 {
+  line-height: 1.6em;
+}
+.arrow::after {
+  font-family: "Font Awesome 5 free"; /* change like this */
+  font-weight: 900; /* insert this definition */
+  font-size: 18px;
+  content: "\f060";
+  display: inline-block;
+  color: #fff;
+  animation: arrow-right 0.6s infinite alternate ease-in-out;
+  /* transition: 0.5s ease; */
+}
+/* Description section */
+.description .desc-content {
+  text-align: start;
+}
+.description .right-content {
+  margin-left: 12px;
+}
+.description .right-content .bg-heading {
+  margin-bottom: 40px;
+}
+/* End description section */
+
+/* Create website */
+.create-website {
+  text-align: start;
+  font-weight: 700;
+}
+.create-website .up .p1 {
+  margin-bottom: 0;
+}
+.create-website .down .right {
+  margin-right: 50px;
+}
+/* Create website end */
+/* Online business */
+.on-business .down .web-img {
+  margin-right: 66px;
+}
+/* online business end */
+
+/* Feature +more feature sections */
+.more-feature .feature-down .btn,
+.more-feature .feature-down .btn1 {
+  padding: 18px 47px;
+}
+/* End of Feature +more feature sections  */
+/* Features section */
+.features .col1 {
+  margin-left: 16px;
+}
+/* Features section end */
+
+/* Frequently asked section */
+.freq-questions .freq-right #accordion .card-header .arrow::after {
+  font-family: "Font Awesome 5 free"; /* change like this */
+  font-weight: 900; /* insert this definition */
+  font-size: 18px;
+  content: "\f053";
+  display: inline-block;
+  color: #000;
+  animation: 0;
+}
+/* Frequently asked section end */
+/* Footer */
+footer .foot-content .list,
+.foot-content .info {
+  margin-right: 30px;
+}
+footer .foot-content .list ul {
+  margin-left: 40px;
+  margin-right: 0;
+}
+.foot-content .info .email img {
+  margin-left: 15px;
+  margin-right: 0;
+}
+footer .foot-last p {
+  word-spacing: 6px;
+}
