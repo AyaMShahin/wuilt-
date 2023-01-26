@@ -17,6 +17,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .get-started .content-down .full1 {
+    left: -35px;
+  }
   .get-started .content-down .full6 {
     width: 157px;
     height: 160px;
