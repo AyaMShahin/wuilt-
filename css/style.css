@@ -457,10 +457,12 @@ nav .lang .dropdown:hover .lang {
   .get-started .content-down .full1 {
     width: 320px;
     height: 320px;
+    left: -65px;
   }
   .get-started .content-down .full2 {
     width: 320px;
     height: 320px;
+    right: -18px;
   }
   .get-started .content-down .full3 {
     width: 845px;
