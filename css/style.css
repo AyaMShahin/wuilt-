@@ -1520,6 +1520,7 @@ footer .foot-last p {
   footer .foot-content .list,
   .foot-content .info {
     margin-left: 0px;
+    max-width: 405px;
   }
   footer .foot-content .list ul {
     margin-right: 33px;
