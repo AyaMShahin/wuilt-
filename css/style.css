@@ -74,7 +74,18 @@ main::after {
   font-weight: 700;
   margin-bottom: 20px;
 }
+/* Slide up animation on scroll */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.8s all ease;
+}
 
+.reveal.active1 {
+  transform: translateY(0);
+  opacity: 1;
+}
 .p-style {
   margin-bottom: 31px;
   color: #667085;
