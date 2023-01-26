@@ -652,10 +652,12 @@ nav .lang .dropdown:hover .lang {
     height: 382px;
   }
   .create-website .down .web-img .instant1 {
-    width: 416px;
-    height: 282px;
+    /* width: 416px;
+    height: 282px; */
+    width: 100%;
+    height: auto;
     top: -32px;
-    left: -20px;
+    left: -5px;
   }
   .create-website .down .web-img .instant2 {
     width: 128px;
@@ -667,7 +669,7 @@ nav .lang .dropdown:hover .lang {
     width: 182px;
     height: 30px;
     left: 202px;
-    bottom: 168px;
+    bottom: 200px;
   }
   .create-website .down .right h2 {
     font-size: 32px;
