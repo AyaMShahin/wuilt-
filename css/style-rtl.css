@@ -26,6 +26,14 @@ body {
     top: 135px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .get-started .content-down .full1 {
+    left: -45px;
+  }
+  .get-started .content-down .full2 {
+    right: -27px;
+  }
+}
 
 /* Description section */
 .description .desc-content {
